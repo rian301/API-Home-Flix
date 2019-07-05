@@ -10,18 +10,19 @@ namespace Modelo.Service.Validators
     {
         public CardValidator()
         {
-            RuleFor(c => c.titulo)
+            RuleFor(c => c.Titulo)
                 .NotEmpty().WithMessage("É necessário digitar o Título.")
                 .NotNull().WithMessage("É necessário digitar o Título.");
 
-            RuleFor(c => c.descricao)
+            RuleFor(c => c.Descricao)
                     .NotEmpty().WithMessage("É necessário informar a Descrição.")
                     .NotNull().WithMessage("É necessário informar a Descrição.");
 
-            RuleFor(c => c.link)
+            RuleFor(c => c.Link)
                     .NotEmpty().WithMessage("É necessário informar um link.")
                     .NotNull().WithMessage("É necessário informarum link.");
-            RuleFor(c => c.imagem)
+
+            RuleFor(c => c.Imagem)
                     .NotEmpty().WithMessage("É necessário adicionar uma imagem.")
                     .NotNull().WithMessage("É necessário adicionar uma imagem.");
         }

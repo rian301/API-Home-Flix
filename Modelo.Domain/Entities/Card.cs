@@ -6,12 +6,13 @@ namespace Modelo.Domain.Entities
 {
     public class Card : BaseEntity
     {
-        public string titulo { get; set; }
 
-        public string descricao { get; set; }
+        public string Titulo { get; set; }
 
-        public string link { get; set; }
+        public string Descricao { get; set; }
 
-        public string imagem { get; set; }
+        public string Link { get; set; }
+
+        public string Imagem { get; set; }
     }
 }

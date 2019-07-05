@@ -15,18 +15,19 @@ namespace Modelo.Infra.Data.Mapping
 
             builder.HasKey(c => c.Id);
 
-            builder.Property(c => c.titulo)
+            builder.Property(c => c.Titulo)
                 .IsRequired()
                 .HasColumnName("Titulo");
 
-            builder.Property(c => c.descricao)
+            builder.Property(c => c.Descricao)
                 .IsRequired()
                 .HasColumnName("Descricao");
 
-            builder.Property(c => c.link)
+            builder.Property(c => c.Link)
                 .IsRequired()
                 .HasColumnName("Link");
-            builder.Property(c => c.imagem)
+
+            builder.Property(c => c.Imagem)
                 .IsRequired()
                 .HasColumnName("Imagem");
         }
